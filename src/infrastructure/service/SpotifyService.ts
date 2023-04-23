@@ -9,7 +9,7 @@ export default class SpotifyService {
   }
 
   public static async getNewRelease(market: string, accessToken: string) {
-    const response = await SpotifyApi.getNewRelease(market, accessToken);
+    const response = await SpotifyApi.getNewRelease('JP', accessToken);
     return response;
   }
 }

@@ -1,0 +1,61 @@
+.App {
+  padding: 40px;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px;
+  color: #000000;
+  background-color: #1bd860;
+  border-radius: 500px;
+}
+
+.selector {
+  padding: 10px;
+  color: #000000;
+  border-radius: 500px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 4px;
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.2);
+    }
+    &-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 4px 0 0 4px;
+      object-fit: cover;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      &-name {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &-description {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
